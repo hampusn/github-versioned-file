@@ -1,6 +1,6 @@
 {
    "id": "hampusn.github-versioned-file",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "name": "Github versioned file",
    "author": "Hampus Nordin",
    "description": "Outputs the contents of a file from github with a form to view different versions.",
