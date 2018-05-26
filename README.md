@@ -10,6 +10,6 @@ SiteVision WebApp som visar innehållet i en fil från ett git-arkiv med ett for
 2. Installera tilläggscertifikatet enligt [SiteVision:s hjälpsida om tilläggscertifikat][sitevision-help-addon-certificate].
 3. Gå in under fliken *Tillägg* och installera webappen enligt [SiteVision:s hjälpsida om Tillägg][sitevision-help-addons].
 
-[releases]: releases
+[releases]: /releases
 [sitevision-help-addon-certificate]: https://help.sitevision.se/SiteVision_4_0/12706341.html
 [sitevision-help-addons]: https://help.sitevision.se/SiteVision_4_0/12705868.html
