@@ -2,6 +2,8 @@
 
 SiteVision WebApp som visar innehållet i en fil från ett git-arkiv med ett formulär för att visa olika versioner (taggar).
 
+![Exempel](docs/example.png "Exempel")
+
 ## Installation
 
 > **OBS!** I dagsläget finns ingen signerad version av webappen vilket behövs för att den ska kunna importeras.
