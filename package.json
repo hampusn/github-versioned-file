@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "Outputs the contents of a file from github with a form to view different versions.",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hampusn/github-versioned-file.git"
