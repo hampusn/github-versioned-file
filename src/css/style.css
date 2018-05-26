@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Styling for the webapp 'Github versioned file'.
+ */
+
+.github-versioned-file__form__row {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.github-versioned-file__form__element--ref {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-right: 0.5em;
+}
+
+.github-versioned-file__form__element--submit .github-versioned-file__form__button {
+  font-size: 1em;
+  line-height: 1.25em;
+  padding: 0.5em 1em;
+}
+
+.github-versioned-file__content-holder > pre {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 1em;
+  white-space: pre;
+}

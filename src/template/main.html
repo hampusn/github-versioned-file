@@ -1,0 +1,23 @@
+<div class="github-versioned-file">
+  <form action="<%- getUrl('/') %>" method="get" class="github-versioned-file__form env-form">
+    <div class="github-versioned-file__form__row">
+      <div class="github-versioned-file__form__element github-versioned-file__form__element--ref env-form-element">
+        <label for="<%- appContext.getWebAppNamespace('ref') %>" class="env-form-element__label"><%= i18n('formRefLabel') %></label>
+        
+        <div class="env-form-element__control">
+          <select class="env-form-input" name="ref" id="<%- appContext.getWebAppNamespace('ref') %>">
+            <% tags.forEach(function(tag) { %>
+              <option value="<%- tag %>" <%- selected(tag, ref) %>><%= tag %></option>
+            <% }); %>
+          </select>
+        </div>
+      </div>
+
+      <div class="github-versioned-file__form__element github-versioned-file__form__element--submit env-form-element">
+        <button type="submit" class="github-versioned-file__form__button env-button env-button--primary"><%= i18n('formButtonText') %></button>
+      </div><!--! .env-form-element -->
+    </div><!--! .github-versioned-file__form__row -->
+  </form><!--! .env-form -->
+
+  <div class="github-versioned-file__content-holder"><pre><%= content %></pre></div><!--! .github-versioned-file__content-holder -->
+</div><!--! .github-versioned-file -->

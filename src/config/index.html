@@ -1,0 +1,49 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Autensiering</h3>
+    <p class="lead">Inställningar relaterade till autensieringen som krävs för privata git-arkiv. Är det utpekade git-arkivet publikt krävs ej dessa.</p>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Github-användare</label>
+      <input class="form-control" name="username" />
+    </div>
+
+    <div class="form-group">
+      <label>Github-token</label>
+      <input class="form-control" name="token" />
+      <p class="help-block"><a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/" rel="external" target="_blank">Instruktioner om hur man genererar en token (Engelska)</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Övrigt</h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Ägare av git-arkivet</label>
+      <input class="form-control" name="owner" />
+      <p class="help-block">Användaren eller organisationen som äger git-arkivet.</p>
+    </div>
+
+    <div class="form-group">
+      <label>Git-arkivets namn</label>
+      <input class="form-control" name="repo" />
+    </div>
+
+    <div class="form-group">
+      <label>Sökväg till filen i git-arkivet</label>
+      <input class="form-control" name="path" />
+      <p class="help-block">Skriv in den relativa sökvägen från git-arkivets rot och utan inledande snedstreck. Exempel: <code>docs/example.md</code></p>
+    </div>
+
+    <div class="form-group">
+      <label><input type="checkbox" name="parseAsMarkdown" data-value-type="boolean"> Konvertera från MarkDown till HTML.</label>
+      <p class="help-block">Använd den här funktionen om filen du har pekat ut är skriven i <strong>MarkDown</strong>.</p>
+    </div>
+  </div>
+</div>

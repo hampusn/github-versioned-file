@@ -1,0 +1,35 @@
+{
+  "name": "github-versioned-file",
+  "version": "0.0.0",
+  "description": "Outputs the contents of a file from github with a form to view different versions.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hampusn/github-versioned-file.git"
+  },
+  "scripts": {
+    "setup": "node util/setup.js",
+    "zip": "node util/zip.js",
+    "deploy": "npm run zip && node util/deploy.js",
+    "force-deploy": "npm run zip && node util/deploy.js force",
+    "create-addon": "node util/create-addon.js",
+    "sign": "npm run zip && node util/sign.js",
+    "prod-deploy": "node util/prod-deploy.js"
+  },
+  "keywords": [
+    "webapp",
+    "sitevision"
+  ],
+  "license": "MIT",
+  "author": "Hampus Nordin <nordin.hampus@gmail.com> (https://hampusnord.in)",
+  "bugs": {
+    "url": "https://github.com/hampusn/github-versioned-file/issues"
+  },
+  "homepage": "https://github.com/hampusn/github-versioned-file#readme",
+  "devDependencies": {
+    "inquirer": "^5.2.0",
+    "zip-dir": "^1.0.2",
+    "jsonfile": "^4.0.0",
+    "request": "^2.85.0"
+  }
+}
