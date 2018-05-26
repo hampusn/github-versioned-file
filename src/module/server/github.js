@@ -15,7 +15,7 @@ define(function (require) {
   var defaults = {
     username: username,
     password: token,
-    preemptiveAuthentication: (username && token)
+    preemptiveAuthentication: (!!username && !!token)
   };
 
   function injectArgs (str, args) {
