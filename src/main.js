@@ -8,18 +8,8 @@ define(function(require) {
   return Component.extend({
     template: template,
 
-    onRendered: function() {
-      if (this.state.parseAsMarkdown === true) {
-        var contentHolder = this.$('.github-versioned-file__content-holder');
-        var md            = markdownit();
-        var result        = md.render(contentHolder.text());
-        
-        contentHolder.html(result);
-      }      
-    },
-
     filterState: function(state) {
-      return _.extend({}, {tags: state.tags, content: state.content, ref: state.ref, parseAsMarkdown: state.parseAsMarkdown});
+      return _.extend({}, {tags: state.tags, content: state.content, ref: state.ref});
     },
     templateFunctions: function () {
       return {
