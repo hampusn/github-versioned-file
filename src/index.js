@@ -44,6 +44,8 @@
     if (parseAsMarkdown) {
       const md = new MarkdownIt();
       content = md.render(content);
+    } else {
+      content = '<pre>' + content + '</pre>';
     }
 
     res.render('/', {
