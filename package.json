@@ -1,6 +1,6 @@
 {
   "name": "github-versioned-file",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Outputs the contents of a file from github with a form to view different versions.",
   "main": "index.js",
   "directories": {
